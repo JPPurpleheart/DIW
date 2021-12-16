@@ -1,0 +1,10 @@
+#movresize{
+    display: grid;
+    position: relative;
+    border: 5px solid black;
+    width: 50px;
+    height: 50px;
+    margin: 50px;
+    text-align: center;
+    align-content: center;
+}

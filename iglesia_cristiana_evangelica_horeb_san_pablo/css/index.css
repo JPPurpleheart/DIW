@@ -1,0 +1,41 @@
+/* Media query Laptop */
+@media (min-width: 1280px) {
+
+    /* Controlar el menú extendido */
+    #menu_hamburguesa{
+        display: none;
+        visibility: hidden;
+    }
+
+    #menu_escritorio{
+        display: grid;
+        /* grid-template-columns: 1fr, 2fr; */
+        /* grid-template-areas: "logo menu";
+        justify-items: stretch; */
+        align-items: center;
+        list-style: none;
+    }
+
+    img#logo {
+        display: grid;
+        justify-items: center;
+        width: 50%;
+    }
+
+    #menu{
+        display: grid;
+        /* grid-template-columns: repeat(1fr, 3); */
+        grid-template-areas: "predicas ubicacion contacto";
+        justify-items: stretch;
+        align-items: start;
+        list-style: none;
+    }
+
+}
+
+/* Media query Mobile */
+@media (max-width: 600px) {
+
+    /* Controlar el menú hamburguesa */
+
+}

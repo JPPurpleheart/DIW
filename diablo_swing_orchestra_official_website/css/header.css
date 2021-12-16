@@ -1,0 +1,12 @@
+nav{
+    background-color: cornflowerblue;
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+li{
+    width: 10%;
+    display: inline-block;
+    margin: 1.5%;
+}

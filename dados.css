@@ -1,0 +1,59 @@
+#contenedor{
+    width: 600px;
+    background-color: beige;
+    overflow: hidden;
+}
+.dado{
+    border: 10px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+    margin: 0px;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+#a{
+    float: left;
+    border-color: blue;
+    color: blue;
+    /*margin-left: 240px;*/
+    width: 96%;
+}
+#b{
+    float: left;
+    clear: left;
+    border-color: red;
+    color: red;
+    /*margin-left: 180px;*/
+    width: 66.5%;
+}
+#c{
+    float: left;
+    border-color: green;
+    color: green;
+    width: 26.5%;
+}
+#d{
+    float: left;
+    clear: left;
+    border-color: blue;
+    color: blue;
+    /*margin-left: 120px;*/
+    width: 30%;
+}
+#e{
+    float: left;
+    border-color: green;
+    color: green;
+    width: 30%;
+}
+#f{
+    float: left;
+    border-color: red;
+    color: red;
+    width: 30%;
+}

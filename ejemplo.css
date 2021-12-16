@@ -1,0 +1,37 @@
+.contenedor{
+    border: 5px solid black;
+    display: inline-block;
+    font-size: 50px;
+    width: 100%;
+    height: 925px;
+}
+.a{
+    float: left;
+    border: 10px solid red;
+    width: 31%;
+    height: 97.5%;
+    text-align: center;
+}
+.a:hover{
+    border-color: darkblue;
+}
+.b{
+    float: left;
+    border: 10px solid green;
+    width: 31%;
+    height: 97.5%;
+    text-align: center;
+}
+.b:focus{
+    border-color: darkgreen;
+}
+.c{
+    float: left;
+    border: 10px solid blue;
+    width: 31%;
+    height: 97.5%;
+    text-align: center;
+}
+.c:active{
+    border-color: darkred;
+}

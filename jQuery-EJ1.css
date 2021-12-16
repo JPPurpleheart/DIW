@@ -1,0 +1,117 @@
+#cuadricula{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(4, 2fr);
+}
+
+#cuadricula > #celda1{
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    height: 20vh;
+}
+
+#cuadricula > #celda2{
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    height: 20vh;
+}
+
+#cuadricula > #celda3{
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    height: 20vh;
+}
+
+#cuadricula > #celda4{
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    height: 20vh;
+}
+
+#cuadricula > #celda5{
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    height: 20vh;
+}
+
+#cuadricula > #celda6{
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    height: 20vh;
+}
+
+#cuadricula > #celda7{
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    height: 20vh;
+}
+
+#cuadricula > #celda8{
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    height: 20vh;
+}
+
+#cuadricula > #celda9{
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    height: 20vh;
+}
+
+#cuadricula > #celda10{
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    height: 20vh;
+}
+
+#cuadricula > #celda11{
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    height: 20vh;
+}
+
+#cuadricula > #celda12{
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    height: 20vh;
+}
+
+#cuadricula > #celda13{
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    height: 20vh;
+}
+
+#cuadricula > #celda14{
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    height: 20vh;
+}
+
+#cuadricula > #celda15{
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    height: 20vh;
+}
+
+#cuadricula > #celda16{
+    background-color: white;
+    border: 5px solid black;
+    margin: 5px;
+    height: 20vh;
+}

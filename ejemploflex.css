@@ -1,0 +1,233 @@
+/*Stretch all*/
+.container1{
+    display: flex;
+    flex-flow: row;
+    border: 1px solid gray;
+}
+.item1{
+    flex-grow: 1;
+    height: 100px;
+    width: 50px;
+    background-color: lightblue;
+    border: 1px solid;
+}
+.item1 + .item1{
+    margin-left: 2%;
+}
+
+/*Stretch middle*/
+.container2{
+    display: flex;
+    flex-flow: row;
+    border: 1px solid gray;
+}
+.item2{
+    height: 100px;
+    width: 100px;
+    background-color: lightblue;
+    border: 1px solid;
+}
+.item2-center{
+    flex-grow: 1;
+    background-color: lightblue;
+    border: 1px solid;
+}
+.item2 + .item2-center{
+    margin-left: 2%;
+}
+.item2-center + .item2{
+    margin-left: 2%;
+}
+
+/*Alternating grid*/
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid gray;
+}
+
+.item3 {
+    width: 48%;
+    height: 100px;
+    margin-bottom: 2%;
+    background-color: lightblue;
+    border: 1px solid;
+}
+
+.item3:nth-child(3n) {
+    width: 100%;
+}
+
+/*3 x 3 grid*/
+.container4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid gray;
+}
+  
+.item4 {
+    flex: 0 32%;
+    height: 100px;
+    margin-bottom: 2%; /* (100-32*3)/2 */
+    background-color: lightblue;
+    border: 1px solid;
+}
+
+/*3 x 3 (1:1)*/
+.container5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid gray;
+}
+
+.item5 {
+    width: 32%;
+    padding-bottom: 32%; /* Same as width, sets height */
+    margin-bottom: 2%; /* (100-32*3)/2 */
+    position: relative;
+    background-color: lightblue;
+    border: 1px solid;
+}
+
+/*3 x 3 (16:9)*/
+.container6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid gray;
+}
+
+.item6 {
+    width: 32%;
+    padding-bottom: 18%; /* 32:18, i.e. 16:9 */
+    margin-bottom: 2%; /* (100-32*3)/2 */
+    background-color: lightblue;
+    border: 1px solid;
+}
+
+/*Vertical bars*/
+.container7 {
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+    align-items: flex-end;
+    border: 1px solid gray;
+}
+
+.item7-1 {
+    width: 14%;
+    height: 40%;
+    background-color: lightblue;
+    border: 1px solid;
+}
+.item7-2 {
+    width: 14%;
+    height: 50%;
+    background-color: lightblue;
+    border: 1px solid;
+}
+.item7-3 {
+    width: 14%;
+    height: 60%;
+    background-color: lightblue;
+    border: 1px solid;
+}
+.item7-4 {
+    width: 14%;
+    height: 20%;
+    background-color: lightblue;
+    border: 1px solid;
+}
+.item7-5 {
+    width: 14%;
+    height: 30%;
+    background-color: lightblue;
+    border: 1px solid;
+}
+
+/*Horizontal bars*/
+.container8 {
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid gray;
+}
+
+.item8-1 {
+    height: 14%;
+    width: 40%;
+    background-color: lightblue;
+    border: 1px solid;
+}
+.item8-2 {
+    height: 14%;
+    width: 50%;
+    background-color: lightblue;
+    border: 1px solid;
+}
+.item8-3 {
+    height: 14%;
+    width: 60%;
+    background-color: lightblue;
+    border: 1px solid;
+}
+.item8-4 {
+    height: 14%;
+    width: 20%;
+    background-color: lightblue;
+    border: 1px solid;
+}
+.item8-5 {
+    height: 14%;
+    width: 30%;
+    background-color: lightblue;
+    border: 1px solid;
+}
+
+/*Vertical stack*/
+.container9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+}
+  
+.item9 {
+    height: 40px;
+    width: 50%;
+    margin-bottom: 10px;
+    background-color: lightblue;
+    border: 1px solid;
+}
+
+/*Masonry*/
+/* Re-order items into rows */
+.item10:nth-child(3n+1) {
+    order: 1;
+    background-color: lightblue;
+    border: 1px solid;
+}
+.item10:nth-child(3n+2) {
+    order: 2;
+    background-color: lightblue;
+    border: 1px solid;
+}
+.item10:nth-child(3n)   {
+    order: 3;
+    background-color: lightblue;
+    border: 1px solid;
+}
+
+/* Force new columns */
+.container10::before,
+.container10::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+  border: 1px solid gray;
+}

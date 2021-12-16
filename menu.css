@@ -1,0 +1,131 @@
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+body{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 5000px;
+}
+*{padding:0;margin:0}
+li{
+  list-style-type:none;
+}
+.nav{
+  
+  margin:10px;
+  width:100%;
+  position:relative;
+}
+.nav > li{
+  position:relative;
+  display:inline-block;
+  padding:5px;
+  margin-right:10px;
+  border: 1px solid black;
+  
+}
+.nav a{
+  text-decoration:none;
+}
+.nav a:hover{
+  color:#aaa; 
+}
+.nav ul{
+  position:absolute;
+  display:none;
+  
+  top:30px;
+  background-color:green;
+}
+.nav ul a{
+  white-space: nowrap;
+}
+.nav li:hover ul {
+  display:block;
+}
+
+.Principal{
+    display: inline-block;
+    width: 68%;
+    background-color: whitesmoke;
+    color: cornflowerblue;
+    text-align: justify;
+}
+.Articulo1 > a{
+    display: inline-block;
+    width: 25%;
+}
+.Articulo1 > article{
+    display: inline-block;
+    width: 72.5%;
+}
+.Articulo2 > a{
+    display: inline-block;
+    width: 25%;
+}
+.Articulo2 > article{
+    display: inline-block;
+    width: 72.5%;
+}
+.Secundario{
+    display: inline-block;
+    width: 28%;
+    background-color: whitesmoke;
+    color: salmon;
+    text-align: left;
+}
+.Secundario > a > img{
+    width: 45%;
+    margin: 0.75%;
+}
+footer{
+    width: 97.75%;
+    background-color: darkblue;
+    text-align: center;
+}
+.Uno{
+    display: inline-block;
+    width: 32%;
+    color: lightblue;
+}
+.Dos{
+    display: inline-block;
+    width: 32%;
+    color: lightcoral;
+}
+.Tres{
+    display: inline-block;
+    width: 32%;
+    color: lightyellow;
+}
