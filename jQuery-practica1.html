@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cuadrado{
+            border: 1px solid black;
+            width: 500px;
+            height: 500px;
+            background-color: hsl(275, 100%, 25%);
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let h = Math.floor(Math.random()*359);
+            let s = Math.floor(Math.random()*100);
+            let l = Math.floor(Math.random()*100);
+            let hslcolor = "hsl(" + h + ", " + s + "%, " + l +"%)";
+            // let hslcolorarray = [];
+            // hslcolorarray.push(hslcolor);
+            // let rand = Math.floor(Math.random * hslcolorarray.length);
+            $('div').on("click",function(){
+                $(this).css("backgroundColor", hslcolor/*array[rand]*/);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="cuadrado"></div>
+</body>
+</html>

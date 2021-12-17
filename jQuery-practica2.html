@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #player{
+            display: block;
+            text-align: center;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#miniplayer').on("click",function(){
+                $('#video').css("width", '300px');
+            });
+            $('#standard').on("click",function(){
+                $('#video').css("width", '60vw');
+            });
+            $('#filmmode').on("click",function(){
+                $('#video').css("width", '95%');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="player">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wLlovxa3VJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" id="video" allowfullscreen></iframe><br><br>
+        <div>
+            <button id="miniplayer">minireproductor</button>
+            <button id="standard">estándar</button>
+            <button id="filmmode">modocine</button>
+        </div>
+    </div>
+</body>
+</html>

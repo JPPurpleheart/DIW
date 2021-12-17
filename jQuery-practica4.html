@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100px;
+        }
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(359deg);
+            }
+        }
+        @keyframes movement {
+            from {
+                transform: translate(0px, 0px);
+            }
+            to {
+                transform: translate(100vw, 0px);
+            }
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                $('#pelota').css('animation', 'rotation 5s infinite linear');
+                $('div').css('animation', 'movement 20s infinite linear');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <img src="https://www.soyvisual.org/sites/default/files/styles/augmentative_resource_lightbox/public/images/photos/dep_0001-p.jpg?itok=hkMKSYOj" alt="pelota" id="pelota">
+    </div><br>
+    <button>Rotate & Move</button>
+</body>
+</html>
